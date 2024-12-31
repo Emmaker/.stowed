@@ -1,0 +1,17 @@
+## nord6
+set $base00 #eceff4
+## nord9
+set $base01 #81a1a1
+## nord8
+set $base02 #88c0d0
+## nord2
+set $base03 #3b4252
+## nord3
+set $base04 #434c5e
+## nord11
+set $base05 #bf616a
+
+client.focused $base02 $base02 $base03
+client.focused_inactive $base01 $base01 $base03
+client.unfocused $base04 $base04 $base00
+client.urgent $base05 $base05 $base00 

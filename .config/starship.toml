@@ -1,0 +1,31 @@
+"$schema" = "https://starship.rs/config-schema.json"
+
+# colorscheme
+#
+# #81a1c1
+# #88c0d0
+# #3b4252
+
+format = """
+$hostname\
+$username\
+$directory
+"""
+
+[hostname]
+ssh_only = false
+style = "bg:#81a1c1 fg:#3b4252"
+format = "[ $hostname ]($style)[\uE0b0](bg:#3b4252 fg:#81a1c1)"
+
+[username]
+show_always = true
+style_user = "bg:#88c0d0 fg:#3b4252"
+style_root = "bg:#88c0d0 fg:#3b4252"
+format = "[\uE0b0](bg:#88c0d0 fg:#3b4252)[ $user ]($style)[\uE0B1](bg:#88c0d0 fg:#3b4252)"
+
+[directory]
+style = "bg:#88c0d0 fg:#3b4252"
+format = "[ $path ]($style)[\uE0b0](fg:#88c0d0) "
+truncate_to_repo = false
+truncation_length = 3
+truncation_symbol = "…/"
