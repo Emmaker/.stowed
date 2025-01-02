@@ -9,23 +9,35 @@
 format = """
 $hostname\
 $username\
-$directory
+$directory\
+$git_branch\
+$character
 """
 
 [hostname]
 ssh_only = false
 style = "bg:#81a1c1 fg:#3b4252"
-format = "[ $hostname ]($style)[\uE0b0](bg:#3b4252 fg:#81a1c1)"
+format = "[ $hostname ]($style)[\ue0b0](bg:#3b4252 fg:#81a1c1)"
 
 [username]
 show_always = true
 style_user = "bg:#88c0d0 fg:#3b4252"
 style_root = "bg:#88c0d0 fg:#3b4252"
-format = "[\uE0b0](bg:#88c0d0 fg:#3b4252)[ $user ]($style)[\uE0B1](bg:#88c0d0 fg:#3b4252)"
+format = "[\ue0b0](bg:#88c0d0 fg:#3b4252)[ $user ]($style)[\ue0b1](bg:#88c0d0 fg:#3b4252)"
 
 [directory]
 style = "bg:#88c0d0 fg:#3b4252"
-format = "[ $path ]($style)[\uE0b0](fg:#88c0d0) "
+format = "[ $path ]($style)[\ue0b0](bg:#3b4252 fg:#88c0d0)[\ue0b0](bg:#8fbcbb fg:#3b4252)"
 truncate_to_repo = false
 truncation_length = 3
 truncation_symbol = "…/"
+
+[git_branch]
+style = "bg:#8fbcbb fg:#3b4252"
+format = "[ $symbol$branch(:$remote_branch)]($style)"
+symbol = "\ue725 "
+
+[character]
+format = "$symbol[\ue0b0](bg:#2e3440 fg:#8fbcbb) "
+success_symbol = "[ \uf054](bg:#8fbcbb fg:#3b4252)"
+error_symbol = "[ \uf00d](bg:#8fbcbb fg:#3b4252)"
