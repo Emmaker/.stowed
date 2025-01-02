@@ -4,4 +4,5 @@
 ^/README.*
 ^/LICENSE.*
 
+^/nvim.sh
 ^/setup.sh
