@@ -1,8 +1,8 @@
 return {
 	"gbprod/nord.nvim",
-    	lazy = false,
-    	priority = 1000,
-    	config = function()
+	lazy = false,
+	priority = 1000,
+	config = function()
 	      	require("nord").setup({
 			transparent = false,
 			terminal_colors = true,
@@ -12,11 +12,11 @@ return {
 			search = { theme = "vscode" },
 			styles = {
 				comments = { italic = true },
-    				keywords = { bold = true },
-    				functions = { bold = true },
-    				variables = { bold = true }		
-    			}
+				keywords = { bold = true },
+				functions = { bold = true },
+				variables = { bold = true }		
+			}
 		})
-      		vim.cmd.colorscheme("nord")
-    	end
+		vim.cmd.colorscheme("nord")
+	end
 }
