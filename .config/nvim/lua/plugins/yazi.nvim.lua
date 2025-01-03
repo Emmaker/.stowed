@@ -17,7 +17,7 @@ return {
 				hovered_buffer_in_same_directory = { bg = nil }
 			},
 			floating_window_scaling_factor = 0.5,
-			yazi_floating_window_border = "none"
+			yazi_floating_window_border = "rounded"
 		})
 	end
 }

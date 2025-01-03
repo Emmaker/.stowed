@@ -1,3 +1,13 @@
 [status]
 separator_open = "\uE0B2"
 separator_close = "\uE0B0"
+
+[mode]
+normal_main = { bg = "#81a1c1", fg = "#434c5e", bold = true }
+normal_alt = { bg = "#8fbcbb", fg = "#434c5e" }
+
+select_main = { bg = "#bf616a", fg = "#434c5e", bold = true }
+select_alt = { bg = "#8fbcbb", fg = "#434c5e" }
+
+unset_main = { bg = "#bf616a", fg = "#434c5e", bold = true }
+unset_alt = { bg = "#8fbcbb", fg = "#434c5e" }

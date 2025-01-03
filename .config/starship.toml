@@ -17,17 +17,17 @@ $character
 [hostname]
 ssh_only = false
 style = "bg:#81a1c1 fg:#3b4252"
-format = "[ $hostname ]($style)[\ue0b0](bg:#3b4252 fg:#81a1c1)"
+format = "[ $hostname ]($style)[\ue0b0](bg:#2e3440 fg:#81a1c1)"
 
 [username]
 show_always = true
 style_user = "bg:#88c0d0 fg:#3b4252"
 style_root = "bg:#88c0d0 fg:#3b4252"
-format = "[\ue0b0](bg:#88c0d0 fg:#3b4252)[ $user ]($style)[\ue0b1](bg:#88c0d0 fg:#3b4252)"
+format = "[\ue0b0](bg:#88c0d0 fg:#2e3440)[ $user ]($style)[\ue0b1](bg:#88c0d0 fg:#2e3440)"
 
 [directory]
 style = "bg:#88c0d0 fg:#3b4252"
-format = "[ $path ]($style)[\ue0b0](bg:#3b4252 fg:#88c0d0)[\ue0b0](bg:#8fbcbb fg:#3b4252)"
+format = "[ $path ]($style)[\ue0b0](bg:#2e3440 fg:#88c0d0)[\ue0b0](bg:#8fbcbb fg:#2e3440)"
 truncate_to_repo = false
 truncation_length = 3
 truncation_symbol = "…/"
